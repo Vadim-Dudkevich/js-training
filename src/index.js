@@ -450,7 +450,7 @@
 //   // Change code above this line
 // };
 
-// !====================================================================== модуль 4 Дз 4
+// !===================================== модуль 4 Дз 4
 // const pizzaPalace = {
 //   pizzas: ['Ultracheese', 'Smoked', 'Four meats'],
 
@@ -500,7 +500,7 @@
 // pizzaPalace.order('Big Mike', makePizza, onOrderError);
 // pizzaPalace.order('Vienna', makePizza, onOrderError);
 
-// !====================================================================== модуль 4 Дз 5
+// !===================================== модуль 4 Дз 5
 // function calculateTotalPrice(orderedItems) {
 //   let totalPrice = 0;
 //   // Change code below this line
@@ -523,7 +523,7 @@
 // console.log(calculateTotalPrice([164, 48, 291]));
 // console.log(calculateTotalPrice([10, 40, 50]));
 
-// !====================================================================== модуль 4 Дз 6 forEach
+// !===================================== модуль 4 Дз 6 forEach
 // function filterArray(numbers, value) {
 //   const filteredNumbers = [];
 //   // Change code below this line
@@ -547,7 +547,7 @@
 // console.log(filterArray([1, 2, 3, 4, 5], 4));
 // console.log(filterArray([10, 20, 25, 27, 29], 25));
 
-// !====================================================================== модуль 4 Дз 7
+// !===================================== модуль 4 Дз 7
 // function getCommonElements(firstArray, secondArray) {
 //   const commonElements = [];
 //   // Change code below this line
@@ -569,7 +569,7 @@
 // }
 // console.log(getCommonElements([1, 2, 19, 5], [1, 17, 19]));
 
-// !====================================================================== модуль 4 Дз 8 Стрелочные функции
+// !===================================== модуль 4 Дз 8 Стрелочные функции
 // // Change code below this line
 // * Обычная
 // // function calculateTotalPrice(quantity, pricePerItem) {
@@ -579,7 +579,7 @@
 //   return quantity * pricePerItem;
 // };
 // console.log(calculateTotalPrice(5, 100));
-// !====================================================================== модуль 4 Дз 9 Неявный возврат (implicit return)
+// !===================================== модуль 4 Дз 9 Неявный возврат (implicit return)
 // // * Неявный возврат (implicit return)
 // const calculateTotalPrice = (quantity, pricePerItem) => quantity * pricePerItem;
 // // * Явный возврат (explicit return)
@@ -591,7 +591,7 @@
 // console.log(calculateTotalPrice(5, 200));
 // console.log(calculateTotalPrice(0, 100));
 
-// !====================================================================== модуль 4 Дз 10 Стрелочные функции как коллбеки
+// !===================================== модуль 4 Дз 10 Стрелочные функции как коллбеки
 //* Стрелочные функции как коллбеки
 // const calculateTotalPrice = orderedItems => {
 //   let totalPrice = 0;
@@ -615,7 +615,7 @@
 
 // console.log(calculateTotalPrice([164, 48, 291])); //// возвращает 503
 
-// !====================================================================== модуль 4 Дз 11
+// !===================================== модуль 4 Дз 11
 //* Стрелочные функции как коллбеки
 // const filterArray = (numbers, value) => {
 //   const filteredNumbers = [];
@@ -643,7 +643,7 @@
 // console.log(filterArray([1, 2, 3, 4, 5], 6)); //возвращает []
 // console.log(filterArray([10, 20, 30, 40, 50], 25)); //возвращает [30. 40, 50]
 
-// !====================================================================== модуль 4 Дз 12
+//! ===================================== модуль 4 Дз 12
 //* Стрелочные функции как коллбеки
 // const getCommonElements = (firstArray, secondArray) => {
 //   const commonElements = [];
@@ -672,7 +672,7 @@
 // console.log(getCommonElements([1, 2, 3], [2, 4])); //возвращает [2]
 // console.log(getCommonElements([10, 22, 23, 15], [16, 22])); //возвращает [22]
 
-// !====================================================================== модуль 4 Дз 13 Чистые функции
+// !===================================== модуль 4 Дз 13 Чистые функции
 // function changeEven(numbers, value) {
 //   let total = [];
 //   numbers.forEach(number => {
@@ -695,7 +695,7 @@
 // }
 // console.log(changeEven([17, 24, 68, 31, 42], 100));
 
-// !======================================================= модуль 4 Дз 14 Метод map()
+// !===================================== модуль 4 Дз 14 Метод map()
 // const planets = ['Earth', 'Mars', 'Venus', 'Jupiter'];
 
 // // Change code below this line
@@ -706,26 +706,119 @@
 // });
 // console.log(planetsLengths);
 
-// !======================================================= модуль 4 Дз 15 Метод map() и массив объектов
-const books = [
-  {
-    title: 'The Last Kingdom',
-    author: 'Bernard Cornwell',
-    rating: 8.38,
-  },
-  {
-    title: 'Beside Still Waters',
-    author: 'Robert Sheckley',
-    rating: 8.51,
-  },
-  {
-    title: 'The Dream of a Ridiculous Man',
-    author: 'Fyodor Dostoevsky',
-    rating: 7.75,
-  },
-  { title: 'Redder Than Blood', author: 'Tanith Lee', rating: 7.94 },
-  { title: 'Enemy of God', author: 'Bernard Cornwell', rating: 8.67 },
-];
-// Change code below this line
+// !===================================== модуль 4 Дз 15 Метод map() и массив объектов
+// const books = [
+//   {
+//     title: 'The Last Kingdom',
+//     author: 'Bernard Cornwell',
+//     rating: 8.38,
+//   },
+//   {
+//     title: 'Beside Still Waters',
+//     author: 'Robert Sheckley',
+//     rating: 8.51,
+//   },
+//   {
+//     title: 'The Dream of a Ridiculous Man',
+//     author: 'Fyodor Dostoevsky',
+//     rating: 7.75,
+//   },
+//   { title: 'Redder Than Blood', author: 'Tanith Lee', rating: 7.94 },
+//   { title: 'Enemy of God', author: 'Bernard Cornwell', rating: 8.67 },
+// ];
+// // Change code below this line
 
-const titles = books;
+// const titles = books.map(book => {
+//   // console.log(book);
+//   return book.title;
+// });
+// console.log(titles);
+
+//!===================================== модуль 4 Дз 16 Метод flatMap()
+// const books = [
+//   {
+//     title: 'The Last Kingdom',
+//     author: 'Bernard Cornwell',
+//     genres: ['adventure', 'history'],
+//   },
+//   {
+//     title: 'Beside Still Waters',
+//     author: 'Robert Sheckley',
+//     genres: ['fiction'],
+//   },
+//   {
+//     title: 'Redder Than Blood',
+//     author: 'Tanith Lee',
+//     genres: ['horror', 'mysticism'],
+//   },
+// ];
+// // Change code below this line
+
+// const genres = books.flatMap(book => {
+//   console.log(book);
+//   return book.genres;
+// });
+// console.log(genres);
+
+//!===================================== модуль 4 Дз 17 Задача. Имена пользователей
+// // *создать новый масив и распылить в него то что приходит тебе типа с бекенда тоесть масив юзер...
+// // *потом с помощью метода (map) найти нужное свойство...
+
+// const getUserNames = users => {
+//   const newUsers = [...users];
+//   const getNewUsersNames = newUsers.map(user => user.name);
+//   return getNewUsersNames;
+// };
+// console.log(getUserNames);
+
+//!===================================== модуль 4 Дз 18 Задача. Почты пользователей
+// const getUserEmails = users => {
+//   const newUsersEmails = [...users];
+//   const getnewUsersEmails = newUsersEmails.map(user => user.email);
+//   return getnewUsersEmails;
+// };
+
+//!===================================== модуль 4 Дз 19 Методы filter и find
+// const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
+// // Change code below this line
+
+// const evenNumbers = numbers.filter(number => {
+//   // console.log(number);
+//   return number % 2 === 0;
+// });
+// const oddNumbers = numbers.filter(number => {
+//   return number % 2;
+// });
+// console.log(evenNumbers);
+// console.log(oddNumbers);
+
+//!===================================== модуль 4 Дз 20 Фильтрация уникальных элементов
+// const books = [
+//   {
+//     title: 'The Last Kingdom',
+//     author: 'Bernard Cornwell',
+//     genres: ['adventure', 'history'],
+//   },
+//   {
+//     title: 'Beside Still Waters',
+//     author: 'Robert Sheckley',
+//     genres: ['fiction', 'mysticism'],
+//   },
+//   {
+//     title: 'Redder Than Blood',
+//     author: 'Tanith Lee',
+//     genres: ['horror', 'mysticism', 'adventure'],
+//   },
+// ];
+// // Change code below this line
+// const allGenres = books.flatMap(book => {
+//   // console.log(book);
+//   return book.genres;
+// });
+
+// const uniqueGenres = allGenres.filter(
+//   (genres, index, array) => array.indexOf(genres) === index,
+// );
+
+// console.log(allGenres);
+// console.log(uniqueGenres);
