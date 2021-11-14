@@ -771,10 +771,10 @@
 // };
 // console.log(getUserNames);
 
-const getUserNames = users => {
-  const names = users.map(user => user.name);
-  return names;
-};
+// const getUserNames = users => {
+//   const names = users.map(user => user.name);
+//   return names;
+//};
 
 //!===================================== модуль 4 Дз 18 Задача. Почты пользователей
 // const getUserEmails = users => {
@@ -858,3 +858,248 @@ const getUserNames = users => {
 
 // console.log(topRatedBooks);
 // console.log(booksByAuthor);
+
+// Change code below this line
+
+//!===================================== модуль 4 Дз 22
+
+// const getUsersWithEyeColor = (users, color) => {
+//   const user = users.filter(eye => eye.eyeColor === color);
+//   return user;
+// };
+
+//!===================================== модуль 4 Дз 23
+// // * Вариант 1
+// const getUsersWithAge = (users, minAge, maxAge) => {
+//   const user = users.filter(user => user.age >= minAge && user.age <= maxAge);
+//   return user;
+// };
+// //  * Вариант 2
+// const getUsersWithAge = (users, minAge, maxAge) => {
+//   return users.filter(user => user.age >= minAge && user.age <= maxAge);
+// };
+
+//!===================================== модуль 4 Дз 24
+// const getUsersWithFriend = (users, friendName) =>
+//   users.filter(user => user.friends.includes(friendName));
+
+//!===================================== модуль 4 Дз 25
+// const getFriends = users => {
+//   const user = users.flatMap(userFriends => userFriends.friends);
+//   const uniqueFriends = user.filter(
+//     (friend, index, array) => array.indexOf(friend) === index,
+//   );
+//   return uniqueFriends;
+// };
+// console.log(getFriends);
+
+//!===================================== модуль 4 Дз 26
+// const getActiveUsers = users => {
+//   const userStatus = users.filter(status => status.isActive === true);
+//   return userStatus;
+// };
+
+//!===================================== модуль 4 Дз 27
+// const getInactiveUsers = users => {
+//   const userStatus = users.filter(status => status.isActive === false);
+//   return userStatus;
+// };
+
+//!===================================== модуль 4 Дз 28 Метод find()
+// const books = [
+//   {
+//     title: 'The Last Kingdom',
+//     author: 'Bernard Cornwell',
+//     rating: 8.38,
+//   },
+//   {
+//     title: 'Beside Still Waters',
+//     author: 'Robert Sheckley',
+//     rating: 8.51,
+//   },
+//   {
+//     title: 'The Dream of a Ridiculous Man',
+//     author: 'Fyodor Dostoevsky',
+//     rating: 7.75,
+//   },
+//   { title: 'Redder Than Blood', author: 'Tanith Lee', rating: 7.94 },
+// ];
+// const BOOK_TITLE = 'The Dream of a Ridiculous Man';
+// const AUTHOR = 'Robert Sheckley';
+// // Change code below this line
+
+// const bookWithTitle = books.find(book => book.title === BOOK_TITLE);
+// const bookByAuthor = books.find(book => book.author === AUTHOR);
+
+// console.log(bookWithTitle);
+// console.log(bookByAuthor);
+
+//!===================================== модуль 4 Дз 29  find()
+// const getUserWithEmail = (users, email) => {
+//   const allUsersEmail = users.find(mail => mail.email === email);
+//   return allUsersEmail;
+//   //return users.find(mail => mail.email === email);
+// };
+
+//!===================================== модуль 4 Дз 30 Метод every()
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Change code below this line
+
+// const eachElementInFirstIsEven = firstArray.every(number => {
+//   return number % 2 === 0;
+// });
+// const eachElementInFirstIsOdd = firstArray.every(number => {
+//   return number % 2;
+// });
+
+// const eachElementInSecondIsEven = secondArray.every(number => {
+//   return number % 2 === 0;
+// });
+// const eachElementInSecondIsOdd = secondArray.every(number => {
+//   return number % 2;
+// });
+
+// const eachElementInThirdIsEven = thirdArray.every(number => {
+//   return number % 2 === 0;
+// });
+// const eachElementInThirdIsOdd = thirdArray.every(number => {
+//   return number % 2;
+// });
+// console.log(eachElementInFirstIsEven);
+// console.log(eachElementInFirstIsOdd);
+// console.log(eachElementInSecondIsEven);
+// console.log(eachElementInSecondIsOdd);
+// console.log(eachElementInThirdIsEven);
+// console.log(eachElementInThirdIsOdd);
+
+//!===================================== модуль 4 Дз 31
+// const isEveryUserActive = users => {
+//   const allUsersActive = users.every(user => user.isActive);
+//   return allUsersActive;
+// };
+
+//!===================================== модуль 4 Дз 32 Метод some()
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Change below this line
+
+// const anyElementInFirstIsEven = firstArray.some(num => {
+//   return num % 2 === 0;
+// });
+// const anyElementInFirstIsOdd = firstArray.some(num => {
+//   return num % 2;
+// });
+
+// const anyElementInSecondIsEven = secondArray.some(num => {
+//   return num % 2 === 0;
+// });
+// const anyElementInSecondIsOdd = secondArray.some(num => {
+//   return num % 2;
+// });
+
+// const anyElementInThirdIsEven = thirdArray.some(num => {
+//   return num % 2 === 0;
+// });
+// const anyElementInThirdIsOdd = thirdArray.some(num => {
+//   return num % 2;
+// });
+
+// console.log(anyElementInFirstIsEven);
+// console.log(anyElementInFirstIsOdd);
+// console.log(anyElementInSecondIsEven);
+// console.log(anyElementInSecondIsOdd);
+// console.log(anyElementInThirdIsEven);
+// console.log(anyElementInThirdIsOdd);
+//!===================================== модуль 4 Дз 33
+// const isAnyUserActive = users => {
+//   return users.some(user => user.isActive);
+//   //  const userActive = users.some(user => user.isActive)
+//   //  return userActive
+// };
+
+//!===================================== модуль 4 Дз 34 Метод reduce()
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244,
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// // Change code below this line
+
+// const totalPlayTime = playtimes.reduce((acc, player) => acc + player);
+
+// // Change code above this line
+// const averagePlayTime = totalPlayTime / playtimes.length;
+// console.log(totalPlayTime);
+// console.log(averagePlayTime);
+
+//!===================================== модуль 4 Дз 35 Метод reduce() и массив объектов
+// const players = [
+//   { name: 'Mango', playtime: 1270, gamesPlayed: 4 },
+//   { name: 'Poly', playtime: 469, gamesPlayed: 2 },
+//   { name: 'Ajax', playtime: 690, gamesPlayed: 3 },
+//   { name: 'Kiwi', playtime: 241, gamesPlayed: 1 },
+// ];
+// // Change code below this line
+
+// const totalAveragePlaytimePerGame = players.reduce(
+//   (time, game) => time + game.playtime / game.gamesPlayed,
+//   0,
+// );
+// console.log(totalAveragePlaytimePerGame);
+
+//!===================================== модуль 4 Дз 36 Задача. Общий баланс пользователей
+// const calculateTotalBalance = users => {
+//   const totalBalance = users.reduce((acc, { balance }) => acc + balance, 0);
+//   return totalBalance;
+// };
+//!===================================== модуль 4 Дз 37 Задача. Общее количество друзей
+// const getTotalFriendCount = users => {
+//   const totalFriends = users.reduce(
+//     (acc, { friends }) => acc + friends.length,
+//     0,
+//   );
+//   return totalFriends;
+// };
+
+//!===================================== модуль 4 Дз 38 Метод sort()
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = [
+//   'Tanith Lee',
+//   'Bernard Cornwell',
+//   'Robert Sheckley',
+//   'Fyodor Dostoevsky',
+// ];
+// // Change code below this line
+
+// const ascendingReleaseDates = [...releaseDates].sort();
+// console.log(ascendingReleaseDates);
+
+// const alphabeticalAuthors = [...authors].sort();
+// console.log(alphabeticalAuthors);
+
+//!===================================== модуль 4 Дз 39 Свой порядок сортировки чисел
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// // Change code below this line
+
+// const ascendingReleaseDates = [...releaseDates].sort();
+
+// const descendingReleaseDates = [...ascendingReleaseDates].sort((a, b) => b - a);
+
+// console.log(releaseDates);
+// console.log(ascendingReleaseDates);
+// console.log(descendingReleaseDates);
+
+//!===================================== модуль 4 Дз 40
+//!===================================== модуль 4 Дз 41
+//!===================================== модуль 4 Дз 42
+//!===================================== модуль 4 Дз 43
+//!===================================== модуль 4 Дз 44
+//!===================================== модуль 4 Дз 45
+//!===================================== модуль 4 Дз 46
+//!===================================== модуль 4 Дз 47
+//!===================================== модуль 4 Дз 48
